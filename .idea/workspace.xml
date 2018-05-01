@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70aa152c-c1c6-4d83-853d-1e2fb4f3b567" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Submission/Code/run_me.py" afterPath="$PROJECT_DIR$/Submission/Code/run_me.py" />
       <change beforePath="$PROJECT_DIR$/c10.jpg" afterPath="$PROJECT_DIR$/Submission/Figures/c10.jpg" />
@@ -13,6 +12,17 @@
       <change beforePath="$PROJECT_DIR$/c5.jpg" afterPath="$PROJECT_DIR$/Submission/Figures/c5.jpg" />
       <change beforePath="$PROJECT_DIR$/c50.jpg" afterPath="$PROJECT_DIR$/Submission/Figures/c50.jpg" />
       <change beforePath="$PROJECT_DIR$/c75.jpg" afterPath="$PROJECT_DIR$/Submission/Figures/c75.jpg" />
+      <change beforePath="$PROJECT_DIR$/ca.jpg" afterPath="$PROJECT_DIR$/Submission/Figures/ca.jpg" />
+      <change beforePath="$PROJECT_DIR$/cc.jpg" afterPath="$PROJECT_DIR$/Submission/Figures/cc.jpg" />
+      <change beforePath="$PROJECT_DIR$/ea.jpg" afterPath="$PROJECT_DIR$/Submission/Figures/ea.jpg" />
+      <change beforePath="$PROJECT_DIR$/ec.jpg" afterPath="$PROJECT_DIR$/Submission/Figures/ec.jpg" />
+      <change beforePath="$PROJECT_DIR$/ew.jpg" afterPath="$PROJECT_DIR$/Submission/Figures/ew.jpg" />
+      <change beforePath="$PROJECT_DIR$/l1a.jpg" afterPath="$PROJECT_DIR$/Submission/Figures/l1a.jpg" />
+      <change beforePath="$PROJECT_DIR$/l1c.jpg" afterPath="$PROJECT_DIR$/Submission/Figures/l1c.jpg" />
+      <change beforePath="$PROJECT_DIR$/l2a.jpg" afterPath="$PROJECT_DIR$/Submission/Figures/l2a.jpg" />
+      <change beforePath="$PROJECT_DIR$/l2c.jpg" afterPath="$PROJECT_DIR$/Submission/Figures/l2c.jpg" />
+      <change beforePath="$PROJECT_DIR$/ma.jpg" afterPath="$PROJECT_DIR$/Submission/Figures/ma.jpg" />
+      <change beforePath="$PROJECT_DIR$/mc.jpg" afterPath="$PROJECT_DIR$/Submission/Figures/mc.jpg" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,18 +32,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/EC$run_me.coverage" NAME="run_me Coverage Results" MODIFIED="1525143397586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Submission/Code" />
+    <SUITE FILE_PATH="coverage/EC$run_me.coverage" NAME="run_me Coverage Results" MODIFIED="1525143716175" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Submission/Code" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="run_me.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Submission/Code/run_me.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+            <state relative-caret-position="476">
+              <caret line="58" column="44" lean-forward="true" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
               <folding>
                 <element signature="e#18#36#0" expanded="true" />
-                <marker date="1525143362000" expanded="true" signature="2049:2531" ph="..." />
+                <marker date="1525143669000" expanded="true" signature="2595:3077" ph="..." />
               </folding>
             </state>
           </provider>
@@ -171,7 +181,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="74" y="23" width="2486" height="1417" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -182,7 +191,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12765957" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41775778" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41775778" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -214,7 +223,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#18#36#0" expanded="true" />
-            <marker date="1525143362000" expanded="true" signature="2049:2531" ph="..." />
+            <marker date="1525143669000" expanded="true" signature="2595:3077" ph="..." />
           </folding>
         </state>
       </provider>
@@ -225,7 +234,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#18#36#0" expanded="true" />
-            <marker date="1525143362000" expanded="true" signature="2049:2531" ph="..." />
+            <marker date="1525143669000" expanded="true" signature="2595:3077" ph="..." />
           </folding>
         </state>
       </provider>
@@ -236,7 +245,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#18#36#0" expanded="true" />
-            <marker date="1525143362000" expanded="true" signature="2049:2531" ph="..." />
+            <marker date="1525143669000" expanded="true" signature="2595:3077" ph="..." />
           </folding>
         </state>
       </provider>
@@ -258,28 +267,28 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ea.jpg">
+    <entry file="file://$PROJECT_DIR$/Submission/Figures/ea.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/l2a.jpg">
+    <entry file="file://$PROJECT_DIR$/Submission/Figures/l2a.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/l2c.jpg">
+    <entry file="file://$PROJECT_DIR$/Submission/Figures/l2c.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Submission/Code/run_me.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="51" column="26" lean-forward="true" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
+        <state relative-caret-position="476">
+          <caret line="58" column="44" lean-forward="true" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
           <folding>
             <element signature="e#18#36#0" expanded="true" />
-            <marker date="1525143362000" expanded="true" signature="2049:2531" ph="..." />
+            <marker date="1525143669000" expanded="true" signature="2595:3077" ph="..." />
           </folding>
         </state>
       </provider>
