@@ -52,24 +52,28 @@ if __name__ == '__main__':
     #             plt.show()
 
     for c in [2, 5, 10, 25, 50, 75, 100, 200]:
-        print(c)
         hac = AgglomerativeClustering(n_clusters=c)
         cluster_lables = hac.fit_predict(flattened_image)
         mean_dict = compute_mean(flattened_image, cluster_lables)
         for i in range(len(cluster_lables)):
             flattened_temp[i] = mean_dict[cluster_lables[i]]
         reconstructed_image = flattened_temp.ravel().reshape(data_x.shape[0], data_x.shape[1], data_x.shape[2])
-        plt.imshow(reconstructed_image)
-        plt.show()
-    # print('Implement k-means here ...')
-    # for c in [2, 5, 10, 25, 50, 75, 100, 200]:
-    #     kmeans = KMeans(n_clusters=c)
-    #     cluster_lables = kmeans.fit_predict(flattened_image)
-    #     for i in range(len(cluster_lables)):
-    #         flattened_temp[i] = kmeans.cluster_centers_[cluster_lables[i]]
-    #
-    #     reconstructed_image = flattened_temp.ravel().reshape(data_x.shape[0], data_x.shape[1], data_x.shape[2])
-    #     plt.imshow(reconstructed_image)
-    #     plt.savefig('c{}.jpg'.format(c))
-    #     plt.close()
+        r_error = np.mean(np.square(data_x - reconstructed_image))
+        print('c = {}, error = {}'.format(c, r_error))
+        # plt.imshow(reconstructed_image)
+        # plt.show()
+
+
+    print('Implement k-means here ...')
+    for c in [2, 5, 10, 25, 50, 75, 100, 200]:
+        kmeans = KMeans(n_clusters=c)
+        cluster_lables = kmeans.fit_predict(flattened_image)
+        for i in range(len(cluster_lables)):
+            flattened_temp[i] = kmeans.cluster_centers_[cluster_lables[i]]
+
+        reconstructed_image = flattened_temp.ravel().reshape(data_x.shape[0], data_x.shape[1], data_x.shape[2])
+        r_error = np.mean(np.square(data_x - reconstructed_image))
+        print('c = {}, error = {}'.format(c, r_error))
+        # plt.imshow(reconstructed_image)
+        # plt.show()
     #     print('Reconstructed image = ', reconstructed_image.shape)
