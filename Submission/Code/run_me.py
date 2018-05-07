@@ -5,6 +5,7 @@ from scipy import misc
 from sklearn.cluster import KMeans, AgglomerativeClustering
 import matplotlib.pyplot as plt
 import imageio
+import math
 
 def read_scene():
     data_x = imageio.imread('../../Data/umass_campus_100x100x3.jpg')
@@ -36,20 +37,20 @@ if __name__ == '__main__':
     print('Flattened image = ', flattened_image.shape)
 
     print('Implement AHC here ...')
-    # for a in ['euclidean', 'l1', 'l2', 'manhattan', 'cosine' ]:
-    #     for l in ['ward', 'complete', 'average']:
-    #         if l == 'ward' and a != 'euclidean':
-    #             pass
-    #         else:
-    #             print(a, l)
-    #             hac = AgglomerativeClustering(affinity=a, linkage=l)
-    #             cluster_lables = hac.fit_predict(flattened_image)
-    #             mean_dict = compute_mean(flattened_image, cluster_lables)
-    #             for i in range(len(cluster_lables)):
-    #                 flattened_temp[i] = mean_dict[cluster_lables[i]]
-    #             reconstructed_image = flattened_temp.ravel().reshape(data_x.shape[0], data_x.shape[1], data_x.shape[2])
-    #             plt.imshow(reconstructed_image)
-    #             plt.show()
+    for a in ['euclidean', 'l1', 'l2', 'manhattan', 'cosine' ]:
+        for l in ['ward', 'complete', 'average']:
+            if l == 'ward' and a != 'euclidean':
+                pass
+            else:
+                print(a, l)
+                hac = AgglomerativeClustering(affinity=a, linkage=l)
+                cluster_lables = hac.fit_predict(flattened_image)
+                mean_dict = compute_mean(flattened_image, cluster_lables)
+                for i in range(len(cluster_lables)):
+                    flattened_temp[i] = mean_dict[cluster_lables[i]]
+                reconstructed_image = flattened_temp.ravel().reshape(data_x.shape[0], data_x.shape[1], data_x.shape[2])
+                plt.imshow(reconstructed_image)
+                plt.show()
 
     for c in [2, 5, 10, 25, 50, 75, 100, 200]:
         hac = AgglomerativeClustering(n_clusters=c)
@@ -58,10 +59,10 @@ if __name__ == '__main__':
         for i in range(len(cluster_lables)):
             flattened_temp[i] = mean_dict[cluster_lables[i]]
         reconstructed_image = flattened_temp.ravel().reshape(data_x.shape[0], data_x.shape[1], data_x.shape[2])
-        r_error = np.mean(np.square(data_x - reconstructed_image))
+        r_error = math.sqrt(np.mean(np.square(data_x - reconstructed_image)))
         print('c = {}, error = {}'.format(c, r_error))
-        # plt.imshow(reconstructed_image)
-        # plt.show()
+        plt.imshow(reconstructed_image)
+        plt.show()
 
 
     print('Implement k-means here ...')
@@ -72,8 +73,8 @@ if __name__ == '__main__':
             flattened_temp[i] = kmeans.cluster_centers_[cluster_lables[i]]
 
         reconstructed_image = flattened_temp.ravel().reshape(data_x.shape[0], data_x.shape[1], data_x.shape[2])
-        r_error = np.mean(np.square(data_x - reconstructed_image))
+        r_error = math.sqrt(np.mean(np.square(data_x - reconstructed_image)))
         print('c = {}, error = {}'.format(c, r_error))
-        # plt.imshow(reconstructed_image)
-        # plt.show()
+        plt.imshow(reconstructed_image)
+        plt.show()
     #     print('Reconstructed image = ', reconstructed_image.shape)
